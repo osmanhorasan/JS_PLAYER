@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(30, 29, 29);
+}
+
+#playButton {
+    font-size: 3.5rem;
+}
+
+.container {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(30, 29, 29);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 2fr 1fr;
+    height: 100%;
+}
+.header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.175);
+    font-size:1.5rem;
+}
+
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: rgba(255, 255, 255, 0.175);
+}
+.content > p {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+.content > div {
+    background-image: conic-gradient(black 0deg , rgba(255, 255, 255, 0.175) 0deg);
+    display: flex;
+    align-items: center;
+    border-radius: 50rem;
+}
+.content > div > img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50rem;
+    filter: blur();
+    border: 5px solid rgba(255, 255, 255, 0.175);
+}
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    align-items: center;
+}
+button {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.175);
+    font-size:1.5rem;
+}
+
+.active {
+    color: aliceblue;
+}
+
+
+button:hover {
+    color: aliceblue;
+    cursor: pointer;
+}
+input {
+    line-height: 2.5rem;
+    width:calc(100% - 2rem);
+    border: none;
+    background-color: rgba(255, 255, 255, 0.175);
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+input:focus{
+    border: none;
+    box-shadow: none;
+}
+.list {
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 3rem);   
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.list>p {
+    color:rgba(255, 255, 255, 0.175) ;
+    line-height: 2.5rem;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.175) ;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.search {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}

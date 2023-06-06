@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <button onclick="aramaiki()"><i class="fa fa-list" aria-hidden="true"></i></button>
+            <button onclick="arama()"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <div class="content">
+            <div id="prog">
+                <img id="image" src="https://i.ytimg.com/vi/jVFj3Zf9sBI/maxresdefault.jpg" alt="">
+            </div>
+            <p id="title">How To Make A Music Player Using HTML CSS And JavaScript</p>
+            <audio controls="" id="audioPlayer" style="opacity: 0;">
+            </audio>
+        </div>
+        <div class="footer">
+            <button onclick="change(-1)"><i class="fa-solid fa-backward"></i></button>
+            <button onclick="playPause()" id="playButton">⏵︎</button>
+            <button onclick="change(1)"><i class="fa-solid fa-forward"></i> </button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <div class="search" id="searchbox">
+        <input id="aramakutusu" type="text" value="" placeholder="müzik ara" oninput="aramayap()">
+        <div class="list" id="list"></div>
+    </div>
+    <script src="./js.js"></script>
+</body>
+
+</html>
